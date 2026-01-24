@@ -5,6 +5,7 @@ export class InputHandler {
 
         window.addEventListener('keydown', (e) => {
             this.keys.add(e.code)
+                        console.log('[InputHandler] Key down:', e.code)
         })
 
         window.addEventListener('keyup', (e) => {
@@ -14,6 +15,10 @@ export class InputHandler {
         // Mouse events (canvas-relative)
         const canvas = document.querySelector('#gameCanvas')
         if (canvas) {
+                        // Make canvas focusable and focus it
+                        canvas.tabIndex = 1
+                        canvas.focus()
+                        console.log('[InputHandler] Canvas focused')
             canvas.addEventListener('mousemove', (e) => {
                 const rect = canvas.getBoundingClientRect()
                 this.mouse.x = e.clientX - rect.left
@@ -23,6 +28,7 @@ export class InputHandler {
             canvas.addEventListener('mousedown', () => {
                 this.mouse.down = true
                 this.mouse.clicked = true
+                                console.log('[InputHandler] Mouse clicked at:', this.mouse.x, this.mouse.y)
             })
 
             canvas.addEventListener('mouseup', () => {
