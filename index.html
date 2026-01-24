@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rawdog: The First Human</title>
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <div id="landing-page" class="landing-page">
+    <div class="landing-content">
+      <div class="title-container">
+        <h1 class="game-title">Raw dogging</h1>
+        <p class="subtitle">The First Human</p>
+      </div>
+
+      <div class="lore-box">
+        <p class="era-text">300,000 BCE • East Africa</p>
+        <p class="lore-text">
+          You are <span class="highlight">the First One</span> — the first human with true consciousness.<br>
+          Shape history. Discover fire. Forge tools. Leave your mark.<br>
+          <strong>Your legacy will echo through millennia.</strong>
+        </p>
+      </div>
+
+      <button id="start-button" class="start-button">
+        <span>BEGIN YOUR JOURNEY</span>
+        <div class="button-shine"></div>
+      </button>
+
+      <div class="features">
+        <div class="feature">🔥 Discover Fire</div>
+        <div class="feature">🪓 Craft Tools</div>
+        <div class="feature">🎨 Create Art</div>
+        <div class="feature">⏳ Shape History</div>
+      </div>
+    </div>
+
+    <div class="particles"></div>
+  </div>
+
+  <!-- Game Canvas -->
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui-layer">
+      <!-- UI Elements will go here -->
+    </div>
+  </div>
+
+  <!-- Inline script to handle landing page -->
+  <script>
+    // This runs immediately on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const startBtn = document.getElementById('start-button');
+      const landingPage = document.getElementById('landing-page');
+
+      if (startBtn && landingPage) {
+        startBtn.addEventListener('click', () => {
+          console.log('[Landing] Button clicked!');
+          landingPage.classList.add('hidden');
+          setTimeout(() => {
+            landingPage.style.display = 'none';
+            console.log('[Landing] Now showing menu');
+          }, 500);
+        });
+      }
+    });
+  </script>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
