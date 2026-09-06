@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "vite": "^6.0.0"
+    "vite": "^8.2.2"
   },
   "dependencies": {
     "@fontsource/vt323": "^5.2.7"
