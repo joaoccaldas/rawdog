@@ -1,9 +1,19 @@
-IyBSYXdkb2cKCioqMkQgU3Vydml2YWwgR2FtZSoqCgpBIDIgc3Vydml2YWwg
-Z2FtZSBidWlsdCB3aXRoIEphdmFTY3JpcHQuIEdhdGhlciByZXNvdXJjZXMs
-IGNyYWZ0IHRvb2xzLCBmaWdodCBlbmVtaWVzLCBhbmQgc3Vydml2ZS4KCiMj
-IEZlYXR1cmVzCi0gUmVzb3VyY2UgZ2F0aGVyaW5nIGFuZCBjcmFmdGluZwot
-IEVuZW15IGNvbWJhdCBzeXN0ZW0KLSBUb29sIGFuZCBpbnZlbnRvcnkgbWFu
-YWdlbWVudAotIFByb2NlZHVyYWxseSBnZW5lcmF0ZWQgd29ybGQKCiMjIFN0
-YXR1cwpDb21wbGV0ZS4gQnVpbHQgYXMgYSBzdXJ2aXZhbCBnYW1pbmcgZXhw
-ZXJpbWVudC4KCioiQnVpbHQgYnkgSm/Do28gQ2FsZGFzIHwgam9hb2NjYWxk
-YXNAZ21haWwuY29tIio=
+# Rawdog — 2D Survival
+
+A 2D survival game built with JavaScript: gather resources, craft tools, fight
+enemies, and survive a procedurally generated world.
+
+**Play:** https://joaoccaldas.github.io/rawdog/
+
+## Features
+- Resource gathering and crafting
+- Enemy combat system
+- Tool and inventory management
+- Procedurally generated world
+
+## Note on naming
+This is the **2D** title. Its 3D sibling is
+[`rawdogging`](https://github.com/joaoccaldas/rawdogging) (the definitive 3D
+version of the series) — the two are distinct games, kept separate on purpose.
+
+Built by João Caldas.
